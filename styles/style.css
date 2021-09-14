@@ -1,0 +1,28 @@
+body {
+    background:url(../images/esobackground.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+header {
+    text-align:center;
+}
+
+form {
+    text-align: center;
+    background-color:#A9927C;
+    color:black;
+    display:block;
+    margin:20%;
+    margin-top:2%;
+    border-radius: 1rem;
+    border:black 2px solid;
+}
+
+.question {
+    padding:1rem;
+}
+
+button {
+    margin-bottom: 3rem;
+}
