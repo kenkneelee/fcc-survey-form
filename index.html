@@ -14,62 +14,77 @@
     </header>
 
     <form id="survey-form">
-        <label for="name" id="name-label">What is your name?</label>
-        <input id="name" type="text" placeholder="name" required>
+        <div class="question">
+            <label for="name" id="name-label">What is your name?</label>
+            <input id="name" type="text" placeholder="name" required>
+        </div>
 
-        <label for="email" id="email-label"> What is your e-mail address?</label>
-        <input id="email" type="email" placeholder="email" required>
+        <div class="question">
+            <label for="email" id="email-label"> What is your e-mail address?</label>
+            <input id="email" type="email" placeholder="email" required>
+        </div>
 
-        <label for="number" id="number-label"> Pick a number between 1 and 99.</label>
-        <input id="number" type="number" placeholder="number" min="1" max="99">
+        <div class="question">
+            <label for="number" id="number-label"> Pick a number between 1 and 99.</label>
+            <input id="number" type="number" placeholder="number" min="1" max="99">
+        </div>
 
-        <label for="dropdown" id="dropdown-label"> Pick an item from the drop-down list.</label>
-        <select id="dropdown" name="selection">
-            <option value="first">First</option>
-            <option value="second">Second</option>
-            <option value="third">Third</option>
-            <option value="fourth">Fourth</option>
-            <option value="fifth">Fifth</option>
-        </select>
+        <div class="question">
+            <label for="dropdown" id="dropdown-label"> Pick an item from the drop-down list.</label>
+            <select id="dropdown" name="selection">
+                <option value="first">First</option>
+                <option value="second">Second</option>
+                <option value="third">Third</option>
+                <option value="fourth">Fourth</option>
+                <option value="fifth">Fifth</option>
+            </select>
+        </div>
 
-        <p>Select a radio button:</p>
-        <label for="radioa" id="radioa-label">
-            <input type="radio" name="radio" id="radioa" value="a">
-            a
-        </label>
+        <div class="question">
+            <p>Select a radio button:</p>
+            <label for="radioa" id="radioa-label">
+                <input type="radio" name="radio" id="radioa" value="a">
+                a
+            </label>
 
-        <label for="radiob" id="radiob-label">
-            <input type="radio" name="radio" id="radiob" value="b">
-            b
-        </label>
+            <label for="radiob" id="radiob-label">
+                <input type="radio" name="radio" id="radiob" value="b">
+                b
+            </label>
 
-        <label for="radioc" id="radioc-label">
-            <input type="radio" name="radio" id="radioc" value="c">
-            c
-        </label>
+            <label for="radioc" id="radioc-label">
+                <input type="radio" name="radio" id="radioc" value="c">
+                c
+            </label>
+        </div>
 
+        <div class="question">
+            <p>Select a few checkboxes:</p>
+            <label for="checka" id="radioa-label">
+                <input type="checkbox" name="check" id="checka" value="a">
+                a
+            </label>
 
+            <label for="checkb" id="radiob-label">
+                <input type="checkbox" name="check" id="checkb" value="b">
+                b
+            </label>
 
-        <p>Select a few checkboxes:</p>
-        <label for="checka" id="radioa-label">
-            <input type="checkbox" name="check" id="checka" value="a">
-            a
-        </label>
+            <label for="checkc" id="radioc-label">
+                <input type="checkbox" name="check" id="checkc" value="c">
+                c
+            </label>
+        </div>
 
-        <label for="checkb" id="radiob-label">
-            <input type="checkbox" name="check" id="checkb" value="b">
-            b
-        </label>
+        <div class="question">
+            <label for="additional" id="textbox">Tell us more:</label>
+            <br>
+            <textarea id="additional" placeholder="Additional comments go here..." rows="10" cols="50"></textarea>
+        </div>
 
-        <label for="checkc" id="radioc-label">
-            <input type="checkbox" name="check" id="checkc" value="c">
-            c
-        </label>
-
-
-        <label for="additional" id="textbox">Tell us more:</label>
-        <textarea id="additional" placeholder="Additional comments go here..." rows="10"></textarea>
-        <button id="submit" type="submit">Submit form</button>
+        <div class="buttons">
+            <button id="submit" type="submit">Submit form</button>
+        </div>
     </form>
 
 
