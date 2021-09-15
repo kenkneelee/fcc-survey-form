@@ -26,6 +26,27 @@
     font-display: swap;
 }
 
+
+h3 {
+    font-size:1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  h3:after, h3:before {
+    content: '';
+    width: 5rem;
+    height: 2px;
+    background: black;
+    margin: 0 10px;
+  }
+
+
+
+
+
 /* set fixed background image */
 
 body {
@@ -94,7 +115,39 @@ input:checked+.classimage{
     opacity:100%;
 }
 
-/* end of radio button section */
+/* end of radio button first section */
+
+#classcontainer2 {
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+}
+
+#radio1,#radio2,#radio3,#radio4,#radio5,#radio6 {
+    position:absolute;
+    opacity:0%;
+}
+
+.classimage2 {
+    opacity:30%;
+    transition:0.5s;
+}
+
+.classimage2:hover {
+    opacity:100%;
+}
+
+input:checked+.classimage2 {
+    opacity:100%;
+}
+
+
+
+
+
+
+
+
 #checka,#checkb,#checkc,#checkd {
     position:absolute;
     opacity:0%;
@@ -121,4 +174,9 @@ input:checked+.classimage{
 }
 input:checked+.actimage {
     opacity:100%;
+}
+
+textarea {
+    width:50%;
+    height:5rem;
 }
