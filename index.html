@@ -10,11 +10,12 @@
 <body>
     <header>
         <h1 id="title">Elder Scrolls Online</h1>
-        <h2>Character selection survey</h2>
+        <h2>Guild activity survey</h2>
         <p id="description">Thanks for helping improve our guild! </p>
     </header>
 
     <form id="survey-form">
+        <h3>Basic Information</h3>
         <div class="question">
             <label for="name" id="name-label">What is your in-game name?</label>
             <input id="name" type="text" placeholder="name" required>
@@ -31,59 +32,85 @@
         </div>
 
         <div class="question">
-            <label for="dropdown" id="dropdown-label"> Pick an item from the drop-down list.</label>
+            <label for="dropdown" id="dropdown-label"> What is your preferred gender?</label>
             <select id="dropdown" name="selection">
-                <option value="first">First</option>
-                <option value="second">Second</option>
-                <option value="third">Third</option>
-                <option value="fourth">Fourth</option>
-                <option value="fifth">Fifth</option>
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+                <option value="nb">Non-binary</option>
+                <option value="other">Other</option>
+                <option value="none">Prefer not to say</option>
             </select>
         </div>
 
-        <p>What is your preferred class?</p>
-        <div class="question" id="classcontainer">
 
-            
-            <label for="radioa" class="radio-label">
-                <input type="radio" name="radio" id="radioa" value="a">
-                <img src="images/classicons/tank.jpg" class="classimage">
-                <p>Tank</p>
-            </label>
 
-            <label for="radiob" class="radio-label">
-                <input type="radio" name="radio" id="radiob" value="b">
-                <img src="images/classicons/dps2.jpg" class="classimage">
-                <p>Damage Dealer</p>
-            </label>
+        <div class="question">
+            <h3>Preferred Class</h3>
+            <p>What is your preferred role?</p>
 
-            <label for="radioc" class="radio-label">
-                <input type="radio" name="radio" id="radioc" value="c">
-                <img src="images/classicons/healer.jpg" class="classimage">
-                <p>Healer</p>
-            </label>
+            <div id="classcontainer">
+                <label for="radioa" class="radio-label">
+                    <input type="radio" name="radio" id="radioa" value="a">
+                    <img src="images/classicons/tank.jpg" class="classimage">
+                    <p>Tank</p>
+                </label>
+
+                <label for="radiob" class="radio-label">
+                    <input type="radio" name="radio" id="radiob" value="b">
+                    <img src="images/classicons/dps2.jpg" class="classimage">
+                    <p>Damage Dealer</p>
+                </label>
+
+                <label for="radioc" class="radio-label">
+                    <input type="radio" name="radio" id="radioc" value="c">
+                    <img src="images/classicons/healer.jpg" class="classimage">
+                    <p>Healer</p>
+                </label>
+            </div>
+
+            <p>What is your preferred class?</p>
+
+        </div>
+
+
+        <div class="question">
+            <h3>Interest in Future Activities</h3>
+            <p>What activities would you like to see more of? (Pick all that apply)</p>
+
+            <div id="activitycontainer">
+
+                <label for="checka" class="check-label">
+                    <input type="checkbox" name="check" id="checka" value="quest">
+                    <img src="images/activities/quest.jpg" class="actimage">
+                    <p>Quests</p>
+                </label>
+
+                <label for="checkb" class="check-label">
+                    <input type="checkbox" name="check" id="checkb" value="dungeon">
+                    <img src="images/activities/dungeon.jpg" class="actimage">
+                    <p>Dungeons</p>
+                </label>
+
+                <label for="checkc" class="check-label">
+                    <input type="checkbox" name="check" id="checkc" value="trial">
+                    <img src="images/activities/trial.jpg" class="actimage">
+                    <p>Trials</p>
+                </label>
+
+                <label for="checkd" class="check-label">
+                    <input type="checkbox" name="check" id="checkd" value="fish">
+                    <img src="images/activities/fish.jpg" class="actimage">
+                    <p>Fishing</p>
+                </label>
+
+            </div>
+
         </div>
 
         <div class="question">
-            <p>What activities do you participate in? (Pick all that apply)</p>
-            <label for="checka" id="radioa-label">
-                <input type="checkbox" name="check" id="checka" value="a">
-                Story content
+            <label for="additional" id="textbox">
+                <p>Tell us more:</p>
             </label>
-
-            <label for="checkb" id="radiob-label">
-                <input type="checkbox" name="check" id="checkb" value="b">
-                Dungeons
-            </label>
-
-            <label for="checkc" id="radioc-label">
-                <input type="checkbox" name="check" id="checkc" value="c">
-                Trials
-            </label>
-        </div>
-
-        <div class="question">
-            <label for="additional" id="textbox">Tell us more:</label>
             <br>
             <textarea id="additional" placeholder="Additional comments go here..." rows="10" cols="50"></textarea>
         </div>

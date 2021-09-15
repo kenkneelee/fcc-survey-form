@@ -1,3 +1,5 @@
+/* import fonts */
+
 @font-face {
     font-family: 'Univers';
     src: url('../fonts/Univers-CondensedBold.eot');
@@ -23,6 +25,8 @@
     font-style: normal;
     font-display: swap;
 }
+
+/* set fixed background image */
 
 body {
     background:url(../images/esobackground.jpg);
@@ -59,10 +63,18 @@ button {
     margin-bottom: 3rem;
 }
 
+/* start of radio button layout and css fade in */
+
 #classcontainer {
     display:flex;
     justify-content:space-evenly;
     flex-wrap:wrap;
+}
+
+/* make radio buttons transparent, use images instead */
+#radioa,#radiob,#radioc {
+    position:absolute;
+    opacity:0%;
 }
 
 .classimage {
@@ -70,7 +82,7 @@ button {
     height:auto;
     border-radius: 3px;
     border:white solid 1px;
-    opacity:70%;
+    opacity:50%;
     transition:0.5s;
 }
 
@@ -82,6 +94,31 @@ input:checked+.classimage{
     opacity:100%;
 }
 
-#radioa,#radiob,#radioc {
+/* end of radio button section */
+#checka,#checkb,#checkc,#checkd {
     position:absolute;
+    opacity:0%;
+}
+
+#activitycontainer {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2fr;
+}
+
+.actimage {
+    max-width:90%;
+    height:auto;
+    border-radius: 3px;
+    border:white solid 1px;
+    opacity:50%;
+    transition:0.5s;
+}
+
+.actimage:hover {
+    opacity:100%;
+}
+input:checked+.actimage {
+    opacity:100%;
 }
