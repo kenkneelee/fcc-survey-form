@@ -26,3 +26,30 @@ form {
 button {
     margin-bottom: 3rem;
 }
+
+#classcontainer {
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+}
+
+.classimage {
+    width:10rem;
+    height:auto;
+    border-radius: 3px;
+    border:white solid 1px;
+    opacity:70%;
+    transition:0.5s;
+}
+
+.classimage:hover {
+    opacity:100%;
+} 
+
+input:checked+.classimage{
+    opacity:100%;
+}
+
+#radioa,#radiob,#radioc {
+    position:absolute;
+}
